@@ -15,6 +15,7 @@
 		523F41E9259284C9005A00F8 /* Professor_Grant_Horners_Bible_Reading_SystemUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523F41E8259284C9005A00F8 /* Professor_Grant_Horners_Bible_Reading_SystemUITests.swift */; };
 		523F420125929DC6005A00F8 /* ChapterList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523F420025929DC6005A00F8 /* ChapterList.swift */; };
 		523F420625929F29005A00F8 /* CompletableListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523F420525929F29005A00F8 /* CompletableListItem.swift */; };
+		523F42112592A21C005A00F8 /* Networker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523F42102592A21C005A00F8 /* Networker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		523F41EA259284C9005A00F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		523F420025929DC6005A00F8 /* ChapterList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterList.swift; sourceTree = "<group>"; };
 		523F420525929F29005A00F8 /* CompletableListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletableListItem.swift; sourceTree = "<group>"; };
+		523F42102592A21C005A00F8 /* Networker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +166,7 @@
 		523F41FC2592852E005A00F8 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				523F42102592A21C005A00F8 /* Networker.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -297,6 +300,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				523F42112592A21C005A00F8 /* Networker.swift in Sources */,
 				523F420125929DC6005A00F8 /* ChapterList.swift in Sources */,
 				523F41CE259284C8005A00F8 /* ContentView.swift in Sources */,
 				523F41CC259284C8005A00F8 /* Professor_Grant_Horners_Bible_Reading_SystemApp.swift in Sources */,
