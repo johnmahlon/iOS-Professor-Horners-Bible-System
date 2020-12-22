@@ -24,12 +24,8 @@ struct ContentView: View {
                     Spacer()
                 }
 
-                List(Chapter.fakeChapters) {
-                    Text($0.name)
-                        .font(.title2)
-                        .padding(8)
-                }
-                .listStyle(InsetGroupedListStyle())
+                ChapterList(Chapter.fakeChapters)
+
 
                 HStack {
                     Spacer()

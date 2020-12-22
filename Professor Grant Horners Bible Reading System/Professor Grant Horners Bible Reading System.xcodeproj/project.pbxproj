@@ -13,6 +13,8 @@
 		523F41D3259284C9005A00F8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 523F41D2259284C9005A00F8 /* Preview Assets.xcassets */; };
 		523F41DE259284C9005A00F8 /* Professor_Grant_Horners_Bible_Reading_SystemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523F41DD259284C9005A00F8 /* Professor_Grant_Horners_Bible_Reading_SystemTests.swift */; };
 		523F41E9259284C9005A00F8 /* Professor_Grant_Horners_Bible_Reading_SystemUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523F41E8259284C9005A00F8 /* Professor_Grant_Horners_Bible_Reading_SystemUITests.swift */; };
+		523F420125929DC6005A00F8 /* ChapterList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523F420025929DC6005A00F8 /* ChapterList.swift */; };
+		523F420625929F29005A00F8 /* CompletableListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523F420525929F29005A00F8 /* CompletableListItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		523F41E4259284C9005A00F8 /* Professor Grant Horners Bible Reading SystemUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Professor Grant Horners Bible Reading SystemUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		523F41E8259284C9005A00F8 /* Professor_Grant_Horners_Bible_Reading_SystemUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Professor_Grant_Horners_Bible_Reading_SystemUITests.swift; sourceTree = "<group>"; };
 		523F41EA259284C9005A00F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		523F420025929DC6005A00F8 /* ChapterList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterList.swift; sourceTree = "<group>"; };
+		523F420525929F29005A00F8 /* CompletableListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletableListItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +141,8 @@
 		523F41F9259284FE005A00F8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				523F420025929DC6005A00F8 /* ChapterList.swift */,
+				523F420525929F29005A00F8 /* CompletableListItem.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -291,8 +297,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				523F420125929DC6005A00F8 /* ChapterList.swift in Sources */,
 				523F41CE259284C8005A00F8 /* ContentView.swift in Sources */,
 				523F41CC259284C8005A00F8 /* Professor_Grant_Horners_Bible_Reading_SystemApp.swift in Sources */,
+				523F420625929F29005A00F8 /* CompletableListItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
