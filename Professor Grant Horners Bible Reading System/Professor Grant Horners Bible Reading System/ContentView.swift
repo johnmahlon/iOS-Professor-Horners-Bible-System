@@ -9,6 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
 
+    let viewModel = ReadingViewModel()
+
     var body: some View {
         ZStack {
 

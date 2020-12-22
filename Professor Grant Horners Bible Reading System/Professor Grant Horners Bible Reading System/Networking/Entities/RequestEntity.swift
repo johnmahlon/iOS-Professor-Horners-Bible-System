@@ -7,6 +7,9 @@
 
 import Foundation
 
-struct RequestEntity<T: Decodable> {
-    let data: [T]
+struct RequestEntity<T: Decodable>: Decodable {
+    let data: [T]?
+    let statusCode: Int?
+    let error: String?
+    let message: String?
 }

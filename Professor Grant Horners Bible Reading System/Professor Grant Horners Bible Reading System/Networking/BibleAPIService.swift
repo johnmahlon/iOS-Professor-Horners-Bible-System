@@ -8,8 +8,8 @@
 import Foundation
 import Combine
 
-class Networker {
-    static public func get<T: Decodable>(request: URLRequest) -> AnyPublisher<T, Never> {
+class BibleAPIService: NetworkingService {
+    func get<T: Decodable>(request: URLRequest) -> AnyPublisher<T, Error> {
         URLSession.shared
             .dataTaskPublisher(for: request)
             .map(\.data)
@@ -17,7 +17,7 @@ class Networker {
                 type: T.self,
                 decoder: JSONDecoder()
             )
-            .assertNoFailure()
+            //.assertNoFailure()
             .receive(on: DispatchQueue.main)
             .eraseToAnyPublisher()
     }
