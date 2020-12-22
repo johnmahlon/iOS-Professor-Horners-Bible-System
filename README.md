@@ -1,2 +1,2 @@
-# iOS-Professor-Horners-Bible-System
+# Professor Horners Bible System for iOS
 iOS App for Professor Grant Horner's Bible Reading System
