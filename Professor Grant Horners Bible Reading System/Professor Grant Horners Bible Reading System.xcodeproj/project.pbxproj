@@ -22,6 +22,7 @@
 		523F422F2592A491005A00F8 /* ReadingEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523F422E2592A491005A00F8 /* ReadingEntry.swift */; };
 		523F423A2592A671005A00F8 /* ReadingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523F42392592A671005A00F8 /* ReadingViewModel.swift */; };
 		523F42462592A75B005A00F8 /* NetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523F42452592A75B005A00F8 /* NetworkingService.swift */; };
+		523F424E2592AD22005A00F8 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523F424D2592AD22005A00F8 /* Secrets.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		523F422E2592A491005A00F8 /* ReadingEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingEntry.swift; sourceTree = "<group>"; };
 		523F42392592A671005A00F8 /* ReadingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingViewModel.swift; sourceTree = "<group>"; };
 		523F42452592A75B005A00F8 /* NetworkingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingService.swift; sourceTree = "<group>"; };
+		523F424D2592AD22005A00F8 /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 				523F41CF259284C9005A00F8 /* Assets.xcassets */,
 				523F41D4259284C9005A00F8 /* Info.plist */,
 				523F41D1259284C9005A00F8 /* Preview Content */,
+				523F424D2592AD22005A00F8 /* Secrets.swift */,
 			);
 			path = "Professor Grant Horners Bible Reading System";
 			sourceTree = "<group>";
@@ -343,6 +346,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				523F423A2592A671005A00F8 /* ReadingViewModel.swift in Sources */,
+				523F424E2592AD22005A00F8 /* Secrets.swift in Sources */,
 				523F42112592A21C005A00F8 /* BibleAPIService.swift in Sources */,
 				523F420125929DC6005A00F8 /* ChapterList.swift in Sources */,
 				523F42212592A372005A00F8 /* ChapterEntity.swift in Sources */,

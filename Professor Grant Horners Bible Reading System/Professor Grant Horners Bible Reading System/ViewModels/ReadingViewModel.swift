@@ -25,7 +25,7 @@ class ReadingViewModel {
             )!
         )
 
-        urlRequest.addValue("7d6bb10a91865e21c74f4c78d574a352", forHTTPHeaderField: "api-key")
+        urlRequest.addValue(Secrets.apiKey, forHTTPHeaderField: "api-key")
 
         cancellable = networker
             .get(request: urlRequest)
