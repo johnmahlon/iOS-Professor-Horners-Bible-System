@@ -13,4 +13,5 @@ struct BookEntity: Decodable {
     let abbreviation: String
     let name: String
     let nameLong: String
+    let chapters: [ChapterEntity]
 }

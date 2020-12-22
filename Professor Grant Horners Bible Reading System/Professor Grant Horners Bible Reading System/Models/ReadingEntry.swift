@@ -9,10 +9,10 @@ import Foundation
 
 struct ReadingEntry: Identifiable {
     let id = UUID()
-    let book: String
-    let number: String
+    let book: BookEntity
+    let chapter: ChapterEntity
 
     var title: String {
-        "\(book) \(number)"
+        "\(book.name) \(chapter.number)"
     }
 }

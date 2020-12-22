@@ -13,12 +13,14 @@ class ReadingViewModel {
     private var cancellable: AnyCancellable?
     private let networker: NetworkingService
 
+    private var lists: [[BookEntity]]?
+
     init(networker: NetworkingService = BibleAPIService()) {
         self.networker = networker
         doSomething()
     }
 
-    func doSomething() {
+    func createLists() {
         var urlRequest = URLRequest(
             url: URL(
                 string:"https://api.scripture.api.bible/v1/bibles/de4e12af7f28f599-02/books"
@@ -36,7 +38,7 @@ class ReadingViewModel {
                 }
             } receiveValue: { (data: RequestEntity<BookEntity>) in
                 if let bookData = data.data {
-                    print(bookData.count)
+                    
                 } else {
                     print(data.message!)
                 }
