@@ -24,7 +24,7 @@ struct ContentView: View {
                     Spacer()
                 }
 
-                ChapterList(Chapter.fakeChapters)
+                ChapterList(FakeChapter.fakeChapters)
 
 
                 HStack {
@@ -64,7 +64,7 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
-struct Chapter: Identifiable {
+struct FakeChapter: Identifiable {
     let id = UUID()
     let name: String
 
@@ -82,5 +82,5 @@ struct Chapter: Identifiable {
     ]
 
 
-    static let fakeChapters: [Chapter] = fake.map { Chapter(name: $0) }
+    static let fakeChapters: [FakeChapter] = fake.map { FakeChapter(name: $0) }
 }

@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct ChapterList: View {
-    private let chapters: [Chapter]
+    private let chapters: [FakeChapter]
 
-    init(_ chapters: [Chapter]) {
+    init(_ chapters: [FakeChapter]) {
         self.chapters = chapters
     }
 
@@ -24,6 +24,6 @@ struct ChapterList: View {
 
 struct CompletableList_Previews: PreviewProvider {
     static var previews: some View {
-        ChapterList(Chapter.fakeChapters)
+        ChapterList(FakeChapter.fakeChapters)
     }
 }
