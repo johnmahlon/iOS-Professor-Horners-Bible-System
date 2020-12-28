@@ -13,17 +13,19 @@ class ReadingViewModel {
     private var cancellable: AnyCancellable?
     private let networker: NetworkingService
 
-    private var lists: [[BookEntity]]?
+    private var lists: [[String: [ChapterEntity]]] = [
+        
+    ]
 
     init(networker: NetworkingService = BibleAPIService()) {
         self.networker = networker
-        doSomething()
+        createLists()
     }
 
     func createLists() {
         var urlRequest = URLRequest(
             url: URL(
-                string:"https://api.scripture.api.bible/v1/bibles/de4e12af7f28f599-02/books"
+                string:"https://api.scripture.api.bible/v1/bibles/de4e12af7f28f599-02/books?include-chapters=true"
             )!
         )
 
@@ -37,11 +39,27 @@ class ReadingViewModel {
                 case .failure(let err): print(err)
                 }
             } receiveValue: { (data: RequestEntity<BookEntity>) in
-                if let bookData = data.data {
-                    
-                } else {
-                    print(data.message!)
+                 guard
+                    let bookData = data.data,
+                    data.error == nil
+                 else {
+                    return
                 }
+
+                let books = bookData.filter { book in
+                    var contains = false
+
+                    for listBook in ReadingPlan.list {
+                        contains = listBook.contains(book.name)
+
+                        if contains { break }
+                    }
+
+                    return contains
+                }
+
+                print(books.count)
+                books.forEach { print($0.name) }
             }
     }
 

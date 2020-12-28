@@ -12,5 +12,5 @@ struct ChapterEntity: Decodable {
     let bibleId: String
     let bookId: String
     let number: String
-    let reference: String
+    let position: Int
 }

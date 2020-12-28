@@ -23,6 +23,7 @@
 		523F423A2592A671005A00F8 /* ReadingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523F42392592A671005A00F8 /* ReadingViewModel.swift */; };
 		523F42462592A75B005A00F8 /* NetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523F42452592A75B005A00F8 /* NetworkingService.swift */; };
 		523F424E2592AD22005A00F8 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523F424D2592AD22005A00F8 /* Secrets.swift */; };
+		5280FDCE259A439600CAA4E0 /* ReadingPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5280FDCD259A439600CAA4E0 /* ReadingPlan.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		523F42392592A671005A00F8 /* ReadingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingViewModel.swift; sourceTree = "<group>"; };
 		523F42452592A75B005A00F8 /* NetworkingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingService.swift; sourceTree = "<group>"; };
 		523F424D2592AD22005A00F8 /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
+		5280FDCD259A439600CAA4E0 /* ReadingPlan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingPlan.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 				523F41D4259284C9005A00F8 /* Info.plist */,
 				523F41D1259284C9005A00F8 /* Preview Content */,
 				523F424D2592AD22005A00F8 /* Secrets.swift */,
+				5280FDCD259A439600CAA4E0 /* ReadingPlan.swift */,
 			);
 			path = "Professor Grant Horners Bible Reading System";
 			sourceTree = "<group>";
@@ -349,6 +352,7 @@
 				523F424E2592AD22005A00F8 /* Secrets.swift in Sources */,
 				523F42112592A21C005A00F8 /* BibleAPIService.swift in Sources */,
 				523F420125929DC6005A00F8 /* ChapterList.swift in Sources */,
+				5280FDCE259A439600CAA4E0 /* ReadingPlan.swift in Sources */,
 				523F42212592A372005A00F8 /* ChapterEntity.swift in Sources */,
 				523F41CE259284C8005A00F8 /* ContentView.swift in Sources */,
 				523F41CC259284C8005A00F8 /* Professor_Grant_Horners_Bible_Reading_SystemApp.swift in Sources */,
